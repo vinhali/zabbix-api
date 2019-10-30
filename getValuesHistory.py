@@ -8,7 +8,8 @@ d = date.today() - timedelta(days = 1)
 
 # combines the day with the midnight time
 startTimestamp = int(datetime.combine(d, time(0, 0)).timestamp())
-# combina o dia com o horário 23:59
+
+#day and time combinations 23:59
 endTimestamp = int(datetime.combine(d, time(23, 59)).timestamp())
 
 groupFilter = {'name': 'Group Server Name'} # Insert Group Server Name'
